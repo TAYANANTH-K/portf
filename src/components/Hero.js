@@ -17,11 +17,7 @@ export default function Hero() {
             <h1 className=' text-white text-6xl font-hero-font'>Hi, <br/> Im <span className='text-black'></span> TAYANANTH 
                 <p className='text-2xl'>{config.subtitle}</p>
             </h1>
-            <div className='flex py-10'>
             
-                <a href={config.social.facebook} className='pr-5 hover:text-white'><AiOutlineFacebook size={40}/></a>
-                <a href={config.social.linkedin} className='hover:text-white'><AiOutlineLinkedin size={40}/></a>
-            </div>
        </div>
     <img
   src={HeroImg}

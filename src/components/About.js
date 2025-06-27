@@ -3,7 +3,8 @@ import AboutImg from '../assets/about.png';
 export default function About () {
     const config  = {
         line1: 'Hi, My name is Tayananth . I am a Software developer. I built beautiful Website with React.js , Tailwind CSS + Bootstrap',
-        line2: 'I am proficient in Frontend skills like React.js, Redux, Redux Tool Kit, Axios, Tailwind CSS, SaSS, Css3 and many more.',
+line2: 'I am proficient in developing web and mobile applications using frontend technologies like React.js, native.',
+
         line3: 'In backend I know Node.js, Express.js, MongoDB, and Mongoose'
     }
 

@@ -5,7 +5,7 @@ export default function Skills() {
     "Back-End Development": ["Node.js", "Express.js"],
     "Databases": ["SQL", "MongoDB"],
     "DevOps": ["Docker"],
-    "Frameworks & Libraries": ["React", "React Native", "Flutter"],
+    "Frameworks & Libraries": ["React", "React Native"],
     "Version Control": ["Git", "GitHub"],
     "Other Skills": ["Problem-Solving", "Logical Thinking", "Teamwork", "Adaptability"]
   };
