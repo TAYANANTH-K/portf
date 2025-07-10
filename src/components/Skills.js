@@ -1,6 +1,6 @@
 export default function Skills() {
   const skillCategories = {
-    "Programming Languages": ["C", "Java", "Python", "JavaScript", "Dart"],
+    "Programming Languages": ["C", "Java", "Python", "JavaScript"],
     "Front-End Development": ["HTML", "CSS", "JavaScript", "React", "React Native", "Tailwind CSS"],
     "Back-End Development": ["Node.js", "Express.js"],
     "Databases": ["SQL", "MongoDB"],
