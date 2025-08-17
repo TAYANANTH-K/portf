@@ -11,12 +11,12 @@ const experiences = [
     {
         company: 'Higher Secondary School',
         period: '2022',
-        description: 'RKR Higher Secondary School',
+        description: 'Literacy Mission Matriculation Higher Secondary School',
     },
     {
         company: 'Bachelor of Engineering',
         period: '2025 - Present',
-        description: 'Bannari Amman Institute of Technology',
+        description: 'Dr.N.G.P Institute of Technology',
     },
 ];
 

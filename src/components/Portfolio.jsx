@@ -2,7 +2,11 @@ import React from 'react';
 import project1 from "../assets/port.jpg";
 import project2 from "../assets/cart.jpg";
 import project4 from "../assets/weather.png";
+import sale from "../assets/sale.jpg"
+import worker from "../assets/worker.jpg"
+import dis from "../assets/dis.jpg"
 import project5 from "../assets/e-com.jpg";
+import res from "../assets/resumea.jpg";
 import project6 from "../assets/expensee.png";
 
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai';
@@ -10,12 +14,12 @@ import Reveal from './Reveal';
 
 const projects = [
     {
-        img: project1,
-        title: "Personal Portfolio",
-        description: "A modern and responsive personal portfolio built with React and styled using Tailwind CSS. Showcasing projects, skills, and experiences with a sleek, user-friendly design optimized for performance.",
+        img: sale,
+        title: "Local Sale and book employee",
+        description: "This MERN stack project is a local marketplace platform similar to OLX, enabling users to buy and sell products seamlessly. Beyond traditional listings, it provides additional services like booking skilled employees (plumbers, electricians, etc.) and renting vehicles. The platform aims to offer a one-stop solution for everyday needs, enhancing convenience and accessibility for users.",
         links: {
             site: "#",
-            github: "#",
+            github: "https://github.com/TAYANANTH-K/local_sale.git",
         },
     },
     {
@@ -23,37 +27,31 @@ const projects = [
         title: "React Shopping Cart",
         description: "A React-based shopping cart feature that allows users to add, update, and remove items. It offers a dynamic and seamless user experience with real-time updates.",
         links: {
-            site: "https://update-cart2-react3.netlify.app/",
-            github: "https://github.com/SUKANT43/Update-Cart-React",
+            site: "",
+            github: "",
         },
     },
     {
-        img: project4,
-        title: "Weather App Using React and API",
-        description: "A weather application built with React that fetches real-time data using APIs. Displays current weather, forecasts, and location-specific updates in a clean, responsive design.",
+        img: res,
+        title: "Resume Analyzer",
+        description: " Developed a web application that analyzes user-uploaded resumes using NLP and machine learning techniques to match their skills and experiences with relevant job listings. The system provides personalized job suggestions, highlights skill gaps, and recommends learning paths to improve employability."
+        ,
         links: {
-            site: "https://weather-website-api2.netlify.app/",
-            github: "https://github.com/SUKANT43/Weather-App",
+            site: "",
+            github: "https://github.com/TAYANANTH-K/resumee_analyze.git",
         },
     },
     {
-        img: project5,
-        title: "MERN E-Commerce Website",
-        description: "A full-stack e-commerce platform built with the MERN stack, featuring product browsing, user authentication, and cart management. Includes an admin dashboard for managing users, products, and orders.",
+        img: dis,
+        title: "Multiple Disease Prediction",
+        description: "Built a web-based platform to predict health conditions like diabetes, heart disease, and Parkinson’s using machine learning algorithms. Integrated data preprocessing, model training, and user-friendly result interpretation.",
+
         links: {
             site: "#",
             github: "https://github.com/SUKANT43/E-commerce-Mern",
         },
     },
-    {
-        img: project6,
-        title: "MERN Expense Tracker",
-        description: "A full-stack expense tracker application built with the MERN stack, enabling users to track, categorize, and manage expenses. Features include user authentication, a dashboard, and real-time data updates.",
-        links: {
-            site: "#",
-            github: "https://github.com/SUKANT43",
-        },
-    },
+    
 ];
 
 const Portfolio = () => {

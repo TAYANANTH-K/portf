@@ -1,6 +1,7 @@
 import React from "react";
 import profilepic from "../assets/mine.jpg";
 import exp from "../assets/express-logo.png";
+import resume from "../assets/resume.jpg"
 import mongo from "../assets/mongo-logo.png";
 import tail from "../assets/tailwind-css.png";
 import { TypeAnimation } from "react-type-animation";
@@ -31,7 +32,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <TypeAnimation
-            sequence={["Full Stack Developer", 1000, "Java Programmer", 1000]}
+            sequence={["Full Stack Developer", 1000, "", 1000]}
             speed={50}
             repeat={Infinity}
             className="font-bold text-gray-400 text-xl md:text-5xl italic- mb-4"
@@ -45,7 +46,7 @@ const Hero = () => {
             className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
           >
             HEY, I AM <br />
-            <span className="text-purple-500">SUKANT C</span>
+            <span className="text-purple-500">TAYANANTH K</span>
           </motion.p>
 
           <motion.p
@@ -55,7 +56,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
-            I am a passionate Full Stack Developer and Java Programmer.
+            I am a passionate MERN Stack Developer.
           </motion.p>
 
           <motion.div
@@ -65,22 +66,25 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
-              }}
-              className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
-            >
-              Download CV
-            </motion.button>
+           <motion.a
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)",
+  }}
+  href="/resume.jpg"   // must be inside public folder
+  download="Tayananth_Resume.jpg"  // rename file when downloading
+  className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl text-center"
+>
+  Download CV
+</motion.a>
+
 
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-              <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/SUKANT43">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/TAYANANTH-K">
                 <AiOutlineGithub />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/sukant-c-b6bba4317/">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/tayananth-k-a72316253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <AiOutlineLinkedin />
               </motion.a>
 
@@ -89,14 +93,16 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        <motion.img
+       <motion.img
   src={profilepic}
-  className="w-[300px] md:w-[450px] rounded-full"
-  initial={{ opacity: 0, scale: 0.8 }}
-  whileInView={{ opacity: 1, scale: 1 }}
+  alt="Profile"
+  className="w-[50px] md:w-[280px] lg:w-[320px] rounded-full shadow-xl border-4 border-white hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+  initial={{ opacity: 0, scale: 0.7, y: 50 }}
+  whileInView={{ opacity: 1, scale: 1, y: 0 }}
   viewport={{ once: true }}
-  transition={{ duration: 1 }}
+  transition={{ duration: 1, ease: 'easeOut' }}
 />
+
 
       </div>
 
@@ -105,9 +111,9 @@ const Hero = () => {
           About <span>Me</span>
         </h3>
         <p className="text-justify leading-7 w-11/12 mx-auto">
-          <strong>I'm Sukant, an Aspiring Full Stack Developer and Java Programmer.</strong>
+          <strong>I'm Tayananth, an Aspiring Software Developer</strong>
           <br />
-          Hello! I am currently pursuing my education at Bannari Amman Institute of Technology, where I have been excelling academically with a remarkable CGPA of 7.1 in the first five semesters. My major work focuses on essential subjects such as Operating Systems, Database Management Systems, Computer Networks, Object-Oriented Programming, Data Structures, and Algorithms. Since beginning my educational journey in 2022, I have been dedicated to expanding my knowledge and skills in the field of Computer Science. With an expected graduation year of 2026, I am eager to leverage my education to contribute meaningfully to the world of technology and embark on exciting opportunities.
+I am currently pursuing my undergraduate degree in Information Technology at Dr. N.G.P. Institute of Technology, maintaining a commendable CGPA of 8.4 up to my sixth semester. My academic journey since 2022 has provided me with strong foundations in key areas such as Operating Systems, Database Management Systems, Computer Networks, Object-Oriented Programming, Data Structures, and Algorithms. With my expected graduation in 2026, I am passionate about leveraging my knowledge and skills to contribute to impactful projects in the field of technology while continuously exploring opportunities for growth and innovation.
         </p>
       </div>
 
