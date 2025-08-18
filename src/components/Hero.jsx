@@ -2,6 +2,7 @@ import React from "react";
 import profilepic from "../assets/mine.jpg";
 import exp from "../assets/express-logo.png";
 import resume from "../assets/resume.jpg"
+import prr from "../assets/prr.jpg";
 import mongo from "../assets/mongo-logo.png";
 import tail from "../assets/tailwind-css.png";
 import { TypeAnimation } from "react-type-animation";
@@ -92,11 +93,10 @@ const Hero = () => {
             </div>
           </motion.div>
         </motion.div>
-
-       <motion.img
-  src={profilepic}
+<motion.img
+  src={prr}
   alt="Profile"
-  className="w-[50px] md:w-[280px] lg:w-[320px] rounded-full shadow-xl border-4 border-white hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+  className="w-full max-w-[280px] md:max-w-[320px] lg:max-w-[400px] rounded-full shadow-xl border-4 border-white hover:scale-105 hover:shadow-2xl transition-transform duration-300"
   initial={{ opacity: 0, scale: 0.7, y: 50 }}
   whileInView={{ opacity: 1, scale: 1, y: 0 }}
   viewport={{ once: true }}
